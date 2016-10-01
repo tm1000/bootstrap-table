@@ -247,7 +247,7 @@
             },
 
             cookiesPresent = function() {
-                return bootstrapTable.options.cookie && bootstrapTable.getCookies(bootstrapTable);
+                return bootstrapTable.options.cookie && bootstrapTable.getCookies(bootstrapTable).length;
             };
 
         selectsWithoutDefaults = $.grep(bootstrapTable.columns, function(column) {
